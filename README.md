@@ -1,4 +1,4 @@
-# HiSms
+# HISMS
 
 
 The  [`ibtdi/hisms`](https://github.com/Mohamed-Nasr-ALi/hisms) package provides a fluent interface to send sms using [HISMS](https://www.hisms.ws) in your php application.

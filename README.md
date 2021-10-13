@@ -32,7 +32,7 @@ HiSms::to(['9665 xxx xxxx','9665 xxx xxxx'])
         ->send();
 ```
 and that's it...
-- other was you would like to get some response it can be done like so:
+- other ways you would like to get some response it can be done like so:
 ```
 $response=HiSms::to(['9665 xxx xxxx','9665 xxx xxxx'])
         ->message('hello world')

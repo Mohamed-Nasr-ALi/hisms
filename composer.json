@@ -1,0 +1,57 @@
+{
+    "name": "ibtdi/hisms",
+    "description": "send sms - using hisms.ws : an sms provider",
+    "keywords": [
+        "hisms",
+        "ibtdi"
+    ],
+    "homepage": "https://github.com/Mohamed-Nasr-ALi/hisms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Nasr Ali",
+            "email": "mohamednasrali00@gmail.com",
+            "homepage": "https://mohamed-nasr-ali-mohamed.herokuapp.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.0",
+        "orchestra/testbench": "^6.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ibtdi\\HiSms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ibtdi\\HiSms\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests!"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ibtdi\\HiSms\\HISmsServiceProvider"
+            ],
+            "aliases": {
+                "HISms": "Ibtdi\\HiSms\\Facades\\HISms"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

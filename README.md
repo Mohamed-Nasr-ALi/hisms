@@ -24,6 +24,11 @@ composer require ibtdi/hisms
 ```
 php artisan hisms:install
 ```
+or 
+```
+vendor:publish --provider="Ibtdi\HiSms\HISmsServiceProvider" --tag="config"
+```
+
 - Set your env variables - take a look at `config/hisms.php`
 - Send first sms:
 ```

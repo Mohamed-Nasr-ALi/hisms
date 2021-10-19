@@ -38,8 +38,7 @@ class SmsRequest extends BaseRequest
     {
         $query = [
             "numbers" => $this->receiver->getReceiver(),
-            "sender" => config('hisms.auth.sender'),
-            "message" => urlencode($this->message->getMessage())
+            "message" => $this->message->getMessage()
         ];
 
         // remove null entries

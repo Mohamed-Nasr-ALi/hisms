@@ -71,7 +71,7 @@ abstract class BaseRequest
     {
         return [
             'headers' => $this->buildRequestHeader(),
-            'query' => array_merge($this->buildType(), $this->buildAuth(), $this->buildQuery()),
+            'query' => http_build_query(array_merge($this->buildType(), $this->buildAuth(), $this->buildQuery())),
         ];
     }
 
